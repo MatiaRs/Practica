@@ -7,45 +7,47 @@
 }
 
 body{
-	background: #455881;
+	background-image: url("file:///C:/Users/cetecom/Documents/GitHub/Practica/img/fondo.jpg");
+	
 }
 
-header{
-	width: 100%;
+.nav{
+	position: none; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
-.navegacion{
-	width: 1900px;
-	margin: 0px auto;
-	background: #699e84;
-}
+	.nav ul {
+		list-style: none;
+	}
 
-.navegacion ul{
-	list-style: none;
-}
+	.nav ul li a {
+		display: inline-block;
+		color:rgb(196, 159, 142);
+		background: rgba(250, 250, 250, 0);
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
 
-.menu > li{
-	position: relative;
-	display: inline-block;
-}
+	.nav ul li .icon-inicio {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.nav ul li .icon-gato {background: #00abf0;}
+	.nav ul li .icon-perro {background: #d95232;}
+	.nav ul li .icon-nosotros {background: #ae181f;}
+	.nav ul li .icon-contacto {background: #666666;}
 
-.menu > li > a{
-	display: block;
-	padding: 20px 30px;
-	color: #353535;
-	font-family: 'Open sans';
-	text-decoration: none;
-}
-
-.menu li a:hover{
-	color: #CE7D35;
-	transition: all .3s;
-}
+	.nav ul li a:hover {
+		background: rgb(0, 0, 0); /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
 /*botones animales*/
 .fcc-btn {
-	background-color: #699e84;
+	background-color: #80b8d8;
 	color: #353535;
-	padding: 15px 25px;
+	padding: 25px 35px;
 	text-decoration: none;
+	padding:10px;border-radius:10px;
   }
-
